@@ -16,8 +16,16 @@ void memStartFetch(unsigned int address, unsigned int count, unsigned char *data
 void doTick(struct CPU cpu); // Needs to shift everything down one register, then it has to do more stuff. Look it up
                              // in the assignment page
 void reset();
-void setReg();
+void setReg(char* reg, unsigned char byte);
 void dump();
+
+void reset() {
+    struct CPU cpu;
+    for (int i = 0; i < 8; i++) {
+        cpu.regs[i] = 0;
+    }
+    cpu.PC = 0;
+}
 
 void doTick(struct CPU cpu) {
     for (int i = 7; i >= 0; i--) {
