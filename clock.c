@@ -4,11 +4,24 @@
 
 
 #include "clock.h"
+//#include "cpu.c"
 
-void reset();
-void tick (unsigned int in);
+static void reset();
+void clockTick (unsigned int tick);
+void clockDump();
+
+
+static void reset() {
+    currentTick = 0;
+}
+
 //shiftRegisters
-void dump();
-void cpuDoTick();//put into cpu.c
+void clockTick (unsigned int tick) {
+    for (int i = currentTick; i < currentTick + tick; i++) {
+        //cpuDoTick();
+    }
+}
 
-
+void clockDump() {
+    printf( "Clock: %d\n", currentTick );
+}
