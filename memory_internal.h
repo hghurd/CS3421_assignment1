@@ -1,0 +1,8 @@
+//
+// Created by hghurd on 9/2/2022.
+//
+
+#ifndef ASSIGNMENT1_MEMORY_INTERNAL_H
+#define ASSIGNMENT1_MEMORY_INTERNAL_H
+
+#endif //ASSIGNMENT1_MEMORY_INTERNAL_H
