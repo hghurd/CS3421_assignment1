@@ -11,4 +11,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int currentTick;
+void clockReset();
+void clockTick (unsigned int tick);
+void clockDump();

@@ -11,28 +11,20 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-//#include "cpu_internal.h"
 
-struct CPU {
-    unsigned char regs[8];
-    unsigned char PC;
-};
 
-struct CPU cpu;
+//Might have to move these?
+//Also, ask if having global variables here is appropriate?
 unsigned char fetchByte;
 bool fetchDone;
 
+void cpuReset();
+void cpuSetReg(char *reg, unsigned char byte);
+void cpuDump();
+void cpuDoTick();
+void memStartFetch(unsigned int address, unsigned int count, unsigned char *dataPtr, bool *memDonePtr);
 
-int findRegIndex(char *reg);
 
 
-//char math
-int findRegIndex(char *reg) {
-    return (int) (reg[1] - 'A');
-}
-
-char findRegName(int index) {
-    return (char)('A' + index);
-}
 
 //CPU parse function?
