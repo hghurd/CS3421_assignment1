@@ -1,6 +1,12 @@
-//
-// Created by hghurd on 8/31/2022.
-//
+/**
+ * Author: Garrett Hurd
+ * Username: hghurd
+ * Filename: cpu.c
+ * Date: 2022-09-18
+ *
+ * Description:
+ *
+ */
 
 #include "cpu.h"
 
@@ -34,10 +40,13 @@ void cpuSetReg(char *reg, unsigned char byte) {
 }
 
 void cpuDump() {
-    printf( "PC: %02X \n", cpu.PC );
+    FILE* file = fopen("output.txt", "a");
+    fprintf( file,"PC: %02X \n", cpu.PC );
     for (int i = 0; i < 8; i++) {
-        printf( "R%c: %02X \n", findRegName(i),cpu.regs[i]);
+        fprintf( file, "R%c: %02X \n", findRegName(i),cpu.regs[i]);
     }
+    fclose(file);
+    free(file);
 }
 
 

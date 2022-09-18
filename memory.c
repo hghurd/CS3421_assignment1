@@ -1,6 +1,12 @@
-//
-// Created by hghurd on 8/31/2022.
-//
+/**
+ * Author: Garrett Hurd
+ * Username: hghurd
+ * Filename: memory.c
+ * Date: 2022-09-18
+ *
+ * Description:
+ *
+ */
 
 #include "memory.h"
 
@@ -18,6 +24,8 @@ void memReset() {
 }
 
 void memDump(int address, int count) {
+    FILE* file = fopen("output.txt", "a");
+    //fprintf a bunch of stuff
 
 /*    for (unsigned int i = address; i < address + count; i++) {
         printf( "%02X \n", *memory[i] );
@@ -26,11 +34,31 @@ void memDump(int address, int count) {
 // Memory needs to get printed in a nice little grid layout, so it's not gonna be as easy as the stuff you did a
 // couple lines up
 
-    //Print the top row (Addr 00 01 02 ... 0E 0F)
+    //Print the column legend on the top row(Addr 00 01 02 ... 0E 0F)
     printf( "Addr " );
     for (int i = 0; i < 16; i++) {
         printf( "%02X ", i);
     }
+
+    int firstDigit = 0xF0;
+    int currRow = 0x00;
+    currRow = address && firstDigit;
+
+    int numOfRows = (int) round(((double) count / 16) - currRow);
+
+    for (int i = 0; i < numOfRows; i++) {
+        for (int j = 0; j < 16; j++) {
+            if (j == 0) {
+                //At the beginning of each row, print the row legend at ont the left
+                fprintf(file, "%02X", (currRow + 0x10));
+            }
+
+        }
+
+    }
+
+    fclose(file);
+    free(file);
 
 }
 

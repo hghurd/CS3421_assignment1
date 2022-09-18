@@ -1,7 +1,12 @@
-//
-// Created by hghurd on 8/31/2022.
-//
-
+/**
+ * Author: Garrett Hurd
+ * Username: hghurd
+ * Filename: clock.c
+ * Date: 2022-09-18
+ *
+ * Description:
+ *
+ */
 
 #include "clock.h"
 #include "cpu.h"
@@ -12,7 +17,7 @@ void clockReset() {
     currentTick = 0;
 }
 
-//shiftRegisters
+//This is probably not done. I think memory has to do some stuff for each tick.
 void clockTick (unsigned int tick) {
     for (int i = currentTick; i < currentTick + tick; i++) {
         cpuDoTick();
@@ -20,5 +25,8 @@ void clockTick (unsigned int tick) {
 }
 
 void clockDump() {
-    printf( "Clock: %d\n", currentTick );
+    FILE* file = fopen("output.txt", "a");
+    fprintf( file,"Clock: %d\n", currentTick );
+    fclose(file);
+    free(file);
 }

@@ -1,6 +1,13 @@
-//
-// Created by hghurd on 8/31/2022.
-//
+/**
+ * Author: Garrett Hurd
+ * Username: hghurd
+ * Filename: cpu.h
+ * Date: 2022-09-18
+ *
+ * Description: This is the header file for cpu.c It includes all of the imported libraries cpu.c will use, and it has
+ *              all of the function prototypes for cpu.c
+ *
+ */
 
 #ifndef ASSIGNMENT1_CPU_H
 #define ASSIGNMENT1_CPU_H
