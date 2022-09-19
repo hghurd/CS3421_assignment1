@@ -69,24 +69,10 @@ include CMakeFiles/Assignment1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Assignment1.dir/flags.make
 
-CMakeFiles/Assignment1.dir/main.c.o: CMakeFiles/Assignment1.dir/flags.make
-CMakeFiles/Assignment1.dir/main.c.o: ../main.c
-CMakeFiles/Assignment1.dir/main.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/main.c.o -MF CMakeFiles/Assignment1.dir/main.c.o.d -o CMakeFiles/Assignment1.dir/main.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/main.c
-
-CMakeFiles/Assignment1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hghurd/CLionProjects/CS3421_assignment1/main.c > CMakeFiles/Assignment1.dir/main.c.i
-
-CMakeFiles/Assignment1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hghurd/CLionProjects/CS3421_assignment1/main.c -o CMakeFiles/Assignment1.dir/main.c.s
-
 CMakeFiles/Assignment1.dir/cpu.c.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/cpu.c.o: ../cpu.c
 CMakeFiles/Assignment1.dir/cpu.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment1.dir/cpu.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment1.dir/cpu.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/cpu.c.o -MF CMakeFiles/Assignment1.dir/cpu.c.o.d -o CMakeFiles/Assignment1.dir/cpu.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/cpu.c
 
 CMakeFiles/Assignment1.dir/cpu.c.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/Assignment1.dir/cpu.c.s: cmake_force
 CMakeFiles/Assignment1.dir/memory.c.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/memory.c.o: ../memory.c
 CMakeFiles/Assignment1.dir/memory.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment1.dir/memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment1.dir/memory.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/memory.c.o -MF CMakeFiles/Assignment1.dir/memory.c.o.d -o CMakeFiles/Assignment1.dir/memory.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/memory.c
 
 CMakeFiles/Assignment1.dir/memory.c.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/Assignment1.dir/memory.c.s: cmake_force
 CMakeFiles/Assignment1.dir/clock.c.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/clock.c.o: ../clock.c
 CMakeFiles/Assignment1.dir/clock.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment1.dir/clock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment1.dir/clock.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/clock.c.o -MF CMakeFiles/Assignment1.dir/clock.c.o.d -o CMakeFiles/Assignment1.dir/clock.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/clock.c
 
 CMakeFiles/Assignment1.dir/clock.c.i: cmake_force
@@ -125,39 +111,37 @@ CMakeFiles/Assignment1.dir/clock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment1.dir/clock.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hghurd/CLionProjects/CS3421_assignment1/clock.c -o CMakeFiles/Assignment1.dir/clock.c.s
 
-CMakeFiles/Assignment1.dir/command_parser.c.o: CMakeFiles/Assignment1.dir/flags.make
-CMakeFiles/Assignment1.dir/command_parser.c.o: ../command_parser.c
-CMakeFiles/Assignment1.dir/command_parser.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Assignment1.dir/command_parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/command_parser.c.o -MF CMakeFiles/Assignment1.dir/command_parser.c.o.d -o CMakeFiles/Assignment1.dir/command_parser.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/command_parser.c
+CMakeFiles/Assignment1.dir/cs3421_emul.c.o: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/cs3421_emul.c.o: ../cs3421_emul.c
+CMakeFiles/Assignment1.dir/cs3421_emul.c.o: CMakeFiles/Assignment1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment1.dir/cs3421_emul.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/cs3421_emul.c.o -MF CMakeFiles/Assignment1.dir/cs3421_emul.c.o.d -o CMakeFiles/Assignment1.dir/cs3421_emul.c.o -c /home/hghurd/CLionProjects/CS3421_assignment1/cs3421_emul.c
 
-CMakeFiles/Assignment1.dir/command_parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment1.dir/command_parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hghurd/CLionProjects/CS3421_assignment1/command_parser.c > CMakeFiles/Assignment1.dir/command_parser.c.i
+CMakeFiles/Assignment1.dir/cs3421_emul.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment1.dir/cs3421_emul.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hghurd/CLionProjects/CS3421_assignment1/cs3421_emul.c > CMakeFiles/Assignment1.dir/cs3421_emul.c.i
 
-CMakeFiles/Assignment1.dir/command_parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment1.dir/command_parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hghurd/CLionProjects/CS3421_assignment1/command_parser.c -o CMakeFiles/Assignment1.dir/command_parser.c.s
+CMakeFiles/Assignment1.dir/cs3421_emul.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment1.dir/cs3421_emul.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hghurd/CLionProjects/CS3421_assignment1/cs3421_emul.c -o CMakeFiles/Assignment1.dir/cs3421_emul.c.s
 
 # Object files for target Assignment1
 Assignment1_OBJECTS = \
-"CMakeFiles/Assignment1.dir/main.c.o" \
 "CMakeFiles/Assignment1.dir/cpu.c.o" \
 "CMakeFiles/Assignment1.dir/memory.c.o" \
 "CMakeFiles/Assignment1.dir/clock.c.o" \
-"CMakeFiles/Assignment1.dir/command_parser.c.o"
+"CMakeFiles/Assignment1.dir/cs3421_emul.c.o"
 
 # External object files for target Assignment1
 Assignment1_EXTERNAL_OBJECTS =
 
-Assignment1: CMakeFiles/Assignment1.dir/main.c.o
 Assignment1: CMakeFiles/Assignment1.dir/cpu.c.o
 Assignment1: CMakeFiles/Assignment1.dir/memory.c.o
 Assignment1: CMakeFiles/Assignment1.dir/clock.c.o
-Assignment1: CMakeFiles/Assignment1.dir/command_parser.c.o
+Assignment1: CMakeFiles/Assignment1.dir/cs3421_emul.c.o
 Assignment1: CMakeFiles/Assignment1.dir/build.make
 Assignment1: CMakeFiles/Assignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Assignment1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hghurd/CLionProjects/CS3421_assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Assignment1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

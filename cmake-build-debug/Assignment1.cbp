@@ -82,34 +82,19 @@
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/clock.h">
 			<Option target="Assignment1"/>
 		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/clock_internal.h">
-			<Option target="Assignment1"/>
-		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/command_parser.c">
-			<Option target="Assignment1"/>
-		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/command_parser.h">
-			<Option target="Assignment1"/>
-		</Unit>
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/cpu.c">
 			<Option target="Assignment1"/>
 		</Unit>
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/cpu.h">
 			<Option target="Assignment1"/>
 		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/cpu_internal.h">
-			<Option target="Assignment1"/>
-		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/main.c">
+		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/cs3421_emul.c">
 			<Option target="Assignment1"/>
 		</Unit>
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/memory.c">
 			<Option target="Assignment1"/>
 		</Unit>
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/memory.h">
-			<Option target="Assignment1"/>
-		</Unit>
-		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/memory_internal.h">
 			<Option target="Assignment1"/>
 		</Unit>
 		<Unit filename="/home/hghurd/CLionProjects/CS3421_assignment1/CMakeLists.txt">

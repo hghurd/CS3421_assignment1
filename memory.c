@@ -40,9 +40,11 @@ void memDump(int address, int count) {
         printf( "%02X ", i);
     }
 
+    int currAddress = address;
     int firstDigit = 0xF0;
-    int currRow = 0x00;
-    currRow = address && firstDigit;
+    int firstRow, currRow = 0x00;
+    firstRow = address && firstDigit;
+    currRow = firstRow;
 
     int numOfRows = (int) round(((double) count / 16) - currRow);
 
@@ -50,7 +52,17 @@ void memDump(int address, int count) {
         for (int j = 0; j < 16; j++) {
             if (j == 0) {
                 //At the beginning of each row, print the row legend at ont the left
-                fprintf(file, "%02X", (currRow + 0x10));
+                fprintf(file, "%02X ", (currRow + 0x10));
+            }
+            if ((i == firstRow) && (i * 16 + j != address)){
+                fprintf(file, "%2c", ' ');
+            }
+            else {
+                fprintf(file, "%02X", *memory[currAddress]);
+                currAddress++;
+            }
+            if (j == 15) {
+                fprintf(file, "\n");
             }
 
         }

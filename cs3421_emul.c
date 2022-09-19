@@ -15,11 +15,10 @@
 #include "memory.h"
 #include "clock.h"
 
-int main (int args, char** argv) {
-    //open file
+int main (int argc, char** argv) {
 
-    FILE* file = fopen(argv[1], "r");
-    char* command = NULL;
+    FILE *file = fopen(argv[1], "r");
+    char *command = NULL;
     fscanf(file, "%s ", command);
 
     if (strcmp(command, "clock") == 0) {
@@ -51,7 +50,13 @@ int main (int args, char** argv) {
             memReset();
         }
         else if (strcmp(command, "dump") == 0) {
-
+            //get starting address
+            //get number of bytes to print
+            int startAddr = 0;
+            int count = 0;
+            fscanf(file, "%d", &startAddr);
+            fscanf(file, "%d", &count);
+            memDump(startAddr, count);
         }
         else if (strcmp(command, "set") == 0) {
             int startAddr = 0, count = 0, tempInput = 0;

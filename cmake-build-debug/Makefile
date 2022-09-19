@@ -153,30 +153,6 @@ clock.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/clock.c.s
 .PHONY : clock.c.s
 
-command_parser.o: command_parser.c.o
-.PHONY : command_parser.o
-
-# target to build an object file
-command_parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/command_parser.c.o
-.PHONY : command_parser.c.o
-
-command_parser.i: command_parser.c.i
-.PHONY : command_parser.i
-
-# target to preprocess a source file
-command_parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/command_parser.c.i
-.PHONY : command_parser.c.i
-
-command_parser.s: command_parser.c.s
-.PHONY : command_parser.s
-
-# target to generate assembly for a file
-command_parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/command_parser.c.s
-.PHONY : command_parser.c.s
-
 cpu.o: cpu.c.o
 .PHONY : cpu.o
 
@@ -201,29 +177,29 @@ cpu.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/cpu.c.s
 .PHONY : cpu.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+cs3421_emul.o: cs3421_emul.c.o
+.PHONY : cs3421_emul.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/main.c.o
-.PHONY : main.c.o
+cs3421_emul.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/cs3421_emul.c.o
+.PHONY : cs3421_emul.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+cs3421_emul.i: cs3421_emul.c.i
+.PHONY : cs3421_emul.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/main.c.i
-.PHONY : main.c.i
+cs3421_emul.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/cs3421_emul.c.i
+.PHONY : cs3421_emul.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+cs3421_emul.s: cs3421_emul.c.s
+.PHONY : cs3421_emul.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/main.c.s
-.PHONY : main.c.s
+cs3421_emul.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/cs3421_emul.c.s
+.PHONY : cs3421_emul.c.s
 
 memory.o: memory.c.o
 .PHONY : memory.o
@@ -261,15 +237,12 @@ help:
 	@echo "... clock.o"
 	@echo "... clock.i"
 	@echo "... clock.s"
-	@echo "... command_parser.o"
-	@echo "... command_parser.i"
-	@echo "... command_parser.s"
 	@echo "... cpu.o"
 	@echo "... cpu.i"
 	@echo "... cpu.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... cs3421_emul.o"
+	@echo "... cs3421_emul.i"
+	@echo "... cs3421_emul.s"
 	@echo "... memory.o"
 	@echo "... memory.i"
 	@echo "... memory.s"
